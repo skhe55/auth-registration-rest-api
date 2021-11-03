@@ -1,7 +1,8 @@
 ## Deployment
 ```
 docker-compose up
-``` Or(bold)
+``` 
+Or(bold)
 ```
 npm i
 ```
