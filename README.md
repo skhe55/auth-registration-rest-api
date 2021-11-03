@@ -11,6 +11,6 @@ npm run start
 ```
 
 ## Stack
-*Nest js*
-*PostgreSql*
+*Nest js* <br>
+*PostgreSql* <br>
 *ORM Sequelize*
