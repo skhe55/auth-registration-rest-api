@@ -1,6 +1,6 @@
 import { buildMessage, ValidationOptions, ValidateBy } from "class-validator";
 
-export const IS_NOT_EMPTY = 'isValidPassword';
+export const IS_VALID_PASSWORD = 'isValidPassword';
 
 export function isValidPassword(value: string): boolean {
     return /\d/.test(value);
@@ -12,7 +12,7 @@ export function isValidPassword(value: string): boolean {
 export function IsValidPassword(validationOptions?: ValidationOptions): PropertyDecorator {
     return ValidateBy(
         {
-            name: IS_NOT_EMPTY,
+            name: IS_VALID_PASSWORD,
             validator: {
                 validate: (value, args): boolean => isValidPassword(value),
                 defaultMessage: buildMessage(eachPrefix => eachPrefix + '$property should not be empty', validationOptions),
