@@ -7,7 +7,7 @@ export function isValidPassword(value: string): boolean {
 }
 
 /**
- * Checks if given value is not empty (!== '', !== null, !== undefined).
+ * Checks if given value contain digits or not.
  */
 export function IsValidPassword(validationOptions?: ValidationOptions): PropertyDecorator {
     return ValidateBy(
